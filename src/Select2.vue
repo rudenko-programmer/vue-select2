@@ -1,6 +1,6 @@
 <template>
   <div>
-    <select class="form-control" :id="id" :name="name" :disabled="disabled" :required="required"></select>
+    <select class="form-control" :id="id" :name="name" :disabled="disabled" :required="required" :multiple="multiple"></select>
   </div>
 </template>
 
@@ -42,6 +42,10 @@ export default {
       default: false
     },
     required: {
+      type: Boolean,
+      default: false
+    },
+    multiple: {
       type: Boolean,
       default: false
     },
